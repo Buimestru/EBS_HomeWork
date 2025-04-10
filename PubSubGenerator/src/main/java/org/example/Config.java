@@ -6,7 +6,7 @@ public class Config {
     public static final int TOTAL_PUBLICATIONS = 100000;
     public static final int TOTAL_SUBSCRIPTIONS = 100000;
 
-    public static final int NUM_THREADS = 4;
+    public static final int NUM_THREADS = Integer.parseInt(System.getProperty("numThreads", "4"));
 
     // Frecvența câmpurilor în subscriptii
     public static final Map<String, Integer> FIELD_FREQUENCIES = Map.of(
